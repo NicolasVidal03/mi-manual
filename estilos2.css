@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    }
+body{
+    background-color:rgb(231, 243, 243);
+    background-blend-mode :hard-light white;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    /* background-color: hsla(238, 14%, 8%, 1); */
+    background-color: rgb(11, 11, 32);    
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+    #header .referencia{
+        padding: 0 10px 0 400px;
+        
+    }
+        #header .referencia a{
+            text-decoration: none;
+            color: white;
+            padding: 0 30px;
+            font-size: 25px;
+        }
+        #header .referencia a:hover{
+            color: rgb(138, 138, 138);
+        }
+    #header .nombre{
+        padding: 0 20px;
+        color: white;
+        font-size: 35px;
+
+    }
+
+
+
+
+table{
+    background-color:rgb(199, 223, 231);
+    /* border: 2px solid black; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin: 10px 30px 10px 30px;
+}
+thead{
+    background-color:rgb(163, 210, 241);
+}
+td{
+    border: 2px solid black;
+}
+th{
+    border: 2px solid black;
+}
+tr:hover{
+    background-color:rgb(151, 171, 180);
+}

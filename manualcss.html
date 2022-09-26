@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Manual</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div id="header">
+        <span class="nombre">
+            <span>Recursos Para Desarrolladores</span>
+        </span>
+
+        <span class="referencia">
+                <a href="index.html">HTML</a>
+                <a href="manualcss.html" >CSS</a>
+                <a href="practica.html">PRACTICA</a>
+        </span>
+    </div>
+
+    <div id="main">
+
+        <center>
+            <h3>Nicolas Vidal</h3>
+            <table>
+                <thead>
+                    <tr>    
+                        <th>Elemento</th>
+                        <th>Descripcion</th>
+                        <th>Enlace</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSS Styling Text</td>
+                        <td>Documentacion sobre el estilizado de texto en CSS.</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text" target="_blanck">Ir a la pagina</a></td>
+                    </tr>
+                    <tr>
+                        <td>CSS: Cascading Style Sheets</td>
+                        <td>Especificacion de CSS</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blanck">Ir a la pagina</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+            <h1>PROPIEDADES CSS</h1>
+            <center>
+            <img src="Imagenes/250px-CSS3_logo_and_wordmark.svg.png" alt="hola" width="70" height="100">
+        <table>
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Herramienta o Documentacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3"><strong>Colores</strong></td>
+
+                    <td>Usando los nombres de los colores.</td>
+                    <td>Podemos especificar un color usando su nombre en ingles.</td>
+                    <td><a href="https://www.w3.org/TR/css-color-3/#svg-color" target="_blank">Herramienta</a></td>
+                </tr>
+                <tr>
+                    <td>Usando el modelo RGB.</td>
+                    <td>Podemos establecer un valor de un color mezclando diferentes intensidades entre los 3 colores primarios. <br> También podemos usar RGBA, donde a indica la transparencia del color. Además que podemos usar números hexadecimales.</td>
+                    <td><a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank">Herramienta</a> </td>
+                </tr>
+                <tr>
+                    <td>Usando el modelo HSL.</td>
+                    <td>Se trata del tono, saturación y luz, en este caso no se trata de introducir colores, sino parámetros. <br> Al igual que en RGB, existe un valor adicional para la transparencia, lo definimos como HSLA.</td>
+                    <td><a href="https://hslpicker.com/#121217" target="_blank">Herramienta</a></td>
+
+                </tr>
+                <tr>
+                    <td rowspan="13" id="propiedad"><strong>Selectores</strong></td>
+
+                    <td>Selector Universal</td>
+                    <td>Se lo indica con un asterisco (*) y selecciona todos los elementos.</td>
+                </tr>
+                <tr>
+                    <td>Selectores de Tipo</td>
+                    <td>Permite seleccionar un elemento usando el nombre de dicho elemento.</td>
+                </tr>
+                <tr>
+                    <td>Selector de Clase</td>
+                    <td>Permite seleccionar elementos en funcion de los valores del atributo class del elemento. Para utilizarlo se pone un punto seguido del nombre de la clase (.foo).</td>
+                </tr>
+                <tr>
+                    <td>Selectores de ID</td>
+                    <td>Permite selecionar elementos en funcion de los valres del atributo ID del elemento. Al usarlo se debe definir un numeral seguido del nombre del ID (#foo).</td>
+                </tr>
+                <tr>
+                    <td>Selectores de Atributo</td>
+                    <td>Permite seleccionar elementos en funcion de la presencia o del valor de un determinado atributo.</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Clases</td>
+                    <td>Permite seleccionar elementos en base a su estado, posicion de los elementos en el documento, e interaccion del usuario.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Elementos</td>
+                    <td>Seleccionan una parte del elemento en lugar de seleccionar al elemento mismo. Permiten añadir estilos a una parte concreta de los elementos seleccionados.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>Union de Selectores</td>
+                    <td>Selecciona la unión de los elementos seleccionados por cada selector de la lista. Se escribe separando los elementos con coma.</td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Descendientes</td>
+                    <td>Selecciona los elementos descendientes del elemento B que se encuentran dentro del elemento A.</td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hijos</td>
+                    <td>Selecciona los elementos B que son hijos del elemento A. Se ecribe A>B.</td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hermanos</td>
+                    <td>Selecciona todos los elementos B que son hermanos de los elementos seleccionados por A. Se escribe A~B.</td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hermanos Adyacentes</td>
+                    <td>Selecciona a los elementos B que son hermanos y están inmediatamente después de el elemento seleccionado A.</td>
+                </tr>
+                <tr>
+                    <td>Especificidad</td>
+                    <td>Es la manera en la cual los navegadores deciden el valor que será aplicado a una propiedad de un elemento.</td>
+                    <td><a href="https://polypane.app/css-specificity-calculator/" target="_blank">Herramienta</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>Unidades</strong></td>
+                    <td>Unidades Absolutas</td>
+                    <td>La unidad absoluta por excelencia el el pixel (px). Un pixel es el equivalente a 0.265 mm.</td>
+                </tr>
+                <tr>
+                    <td>Unidades Relativas</td>
+                    <td>
+                        Hay varias, rem es el tamaño relativo de la letra del elemento raiz, % es relativo a otro valor ya puesto con anterioridad, vw es relativo al ancho del viewport y vh es relativo al alto del viewport.
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="8"><strong>Modelado de Cajas</strong></td>
+                    <td>Definicion Modelo de Cajas</td>
+                    <td>Cada elemento html se considera una caja. doned CSS determina el tamaño, posición y propiedades.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>Contenido</td>
+                    <td>Es el área donde se encuentra el contenido del elemento, en CSS se lo usa como width, con las propiedades min, max, height, min-height y max-height.</td>
+                </tr>
+                <tr>
+                    <td>Relleno</td>
+                    <td>Se trata del área del relleno del elemento, lo escribimos como padding y cuenta con las propiedades top, right, bottom y left.</td>
+                </tr>
+                <tr>
+                    <td>Borde</td>
+                    <td>Tal y como lo especifica su nombre, se trata del borde del elemento. Sus propiedades son width, style y color.</td>
+                </tr>
+                <tr>
+                    <td>Margen</td>
+                    <td>Es el margen del elemento, sirve para separar el elemento de sus vecinos. Las propiedades son las mismas que la de padding.</td>
+                </tr>
+                <tr>
+                    <td>Cajas en Bloque</td>
+                    <td>Ocupan todo el espacio disponible en su contenedor, siempre comienzan en una nueva linea, las propiedades width y height se respetan.</td>
+                </tr>
+                <tr>
+                    <td>Cajas en Línea</td>
+                    <td>Solo ocupan el espacio necesario para mostrar su contenido, width y height no se respetan, padding, margin y border se aplican pero no harán que el contenido que rodea a la caja se aleje de ellos.</td>
+                </tr>
+                <tr>
+                    <td>Un Enfoque Mixto (En línea y bloque)</td>
+                    <td>No comienzan en una nueva linea, width y height se respetan, padding, margin y border harán que el contenido que rodea a la caja se aleje de ella.</td>
+                </tr>
+                <tr>
+                    <td><strong>Media Query</strong></td>
+                    <td>Definición Media Query</td>
+                    <td>Consiste en una media type, y una o más expresiones que contienen características del media type.</td>
+                </tr>
+                <tr>
+                    <td rowspan="3"><strong>FlexBox</strong></td>
+                    <td>Definición FlexBox</td>
+                    <td>Es un modulo de diseño de CSS que facilita el posicionamiento de los elementos. La propiedad display: flex; nos permite establecer un contenedor flexible.</td>
+                    <td><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>Eje Principal</td>
+                    <td>Es un eje a lo largo en el cual se disponen los elementos flexibles, la dirección de este eje se puede cambiar con la propiedad flex-direction, con los valores row, row-reverse, column y column-reverse.</td>
+                </tr>
+                <tr>
+                    <td>Eje Transversal</td>
+                    <td>Es un eje a lo largo en el cual se disponen las lineas flexibles, la dirección de este eje se puede cambiar con la propiedad flex-wrap, con los valores nowrap, wrap, nowrap-reverse y wrap-reverse.</td>
+                </tr>
+            </tbody>
+        </table>
+            </center>
+    </div>
+</body>
+</html>
