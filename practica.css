@@ -1,9 +1,6 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Times New Roman';
-    }
 body{
     background-color:rgb(236, 236, 236);
+    background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgb(228, 228, 228) 35%, rgb(161, 162, 238) 100%);
     background-blend-mode :hard-light white;
     margin: 0;
     padding: 0;
@@ -13,40 +10,20 @@ body{
 
 #header{
     background-color: hsla(238, 14%, 8%, 1);
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
-    #header .referencia{
-        padding: 0 10px 0 400px;
-        
-    }
-        #header .referencia a{
-            text-decoration: none;
-            color: white;
-            padding: 0 30px;
-            font-size: 25px;
-        }
-        #header .referencia a:hover{
-            color: rgb(138, 138, 138);
-        }
-    #header .nombre{
-        padding: 0 20px;
-        color: white;
-        font-size: 35px;
 
-    }
 #grande{
     display: flex;
 }
     #main{
         background-color:  rgb(250, 250, 250);
+        background: linear-gradient(180deg, rgb(250, 250, 250) 0%, rgb(228, 228, 228) 35%, rgb(212, 212, 212) 100%);
+
         margin: 40px 100px 40px 100px;
         padding: 20px 20px 20px 20px;
         min-height: 500px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+        
     }
     #aside-left{
         margin: 130px 0 40px 50px;
@@ -54,6 +31,11 @@ body{
     .imagen{
         box-shadow: 0 0 5px black;
         margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .imagen:hover{
+        transform: translate(100px) scale(1.5);
+        rotate: 40;
     }
 
     footer{
@@ -66,4 +48,19 @@ body{
     }
     footer span{
         margin: 0 40px 0 40px;
+    }
+    .titulo{
+        font-size: 40px;
+        border: 2px solid black;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 5px;
+        width: 100%;
+    }
+    .titulo:hover{
+        transform: scale(1.03);
+        background-color: rgb(221, 221, 221);
+    }
+
+    #red:hover{
+        transform: scale(1.05) translate(2px, -2px);
     }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Manual</title>
+    <link rel="stylesheet" href="principales.css">
     <link rel="stylesheet" href="estilos2.css">
 </head>
 <body>
@@ -21,7 +22,6 @@
     </div>
 
     <div id="main">
-
         <center>
             <h3>Nicolas Vidal</h3>
             <table>
@@ -48,20 +48,19 @@
             </center>
             <h1>PROPIEDADES CSS</h1>
             <center>
-            <img src="Imagenes/250px-CSS3_logo_and_wordmark.svg.png" alt="hola" width="70" height="100">
-        <table>
+                <img class="imagen" src="Imagenes/250px-CSS3_logo_and_wordmark.svg.png" alt="css" width="70" height="100">
+        
+                <div id="titulo">COLORES</div>
+        <table id="colores">
             <thead>
                 <tr>
-                    <th>Propiedad</th>
                     <th>Tipo</th>
                     <th>Explicacion</th>
-                    <th>Herramienta o Documentacion</th>
+                    <th>Herramienta</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="3"><strong>Colores</strong></td>
-
                     <td>Usando los nombres de los colores.</td>
                     <td>Podemos especificar un color usando su nombre en ingles.</td>
                     <td><a href="https://www.w3.org/TR/css-color-3/#svg-color" target="_blank">Herramienta</a></td>
@@ -75,29 +74,47 @@
                     <td>Usando el modelo HSL.</td>
                     <td>Se trata del tono, saturación y luz, en este caso no se trata de introducir colores, sino parámetros. <br> Al igual que en RGB, existe un valor adicional para la transparencia, lo definimos como HSLA.</td>
                     <td><a href="https://hslpicker.com/#121217" target="_blank">Herramienta</a></td>
-
                 </tr>
+            </tbody>
+        </table>
+        <div>
+            <img src="imagenes/rgb.png" alt="RGB" title="RGB" width="150" height="150">
+            <img src="imagenes/hsl.png" alt="HSL" title="HSL" width="150" height="150">
+        </div>
+        <div id="titulo">SELECTORES</div>
+        <table id="Selectores">
+            <thead>
                 <tr>
-                    <td rowspan="13" id="propiedad"><strong>Selectores</strong></td>
-
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Documentacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td>Selector Universal</td>
                     <td>Se lo indica con un asterisco (*) y selecciona todos los elementos.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Selectores de Tipo</td>
                     <td>Permite seleccionar un elemento usando el nombre de dicho elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Selector de Clase</td>
                     <td>Permite seleccionar elementos en funcion de los valores del atributo class del elemento. Para utilizarlo se pone un punto seguido del nombre de la clase (.foo).</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Selectores de ID</td>
                     <td>Permite selecionar elementos en funcion de los valres del atributo ID del elemento. Al usarlo se debe definir un numeral seguido del nombre del ID (#foo).</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Id_selectors" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Selectores de Atributo</td>
                     <td>Permite seleccionar elementos en funcion de la presencia o del valor de un determinado atributo.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute _selectors" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Pseudo-Clases</td>
@@ -112,41 +129,68 @@
                 <tr>
                     <td>Union de Selectores</td>
                     <td>Selecciona la unión de los elementos seleccionados por cada selector de la lista. Se escribe separando los elementos con coma.</td>
+                    <td><a href="https://docs.google.com/document/d/1SDbFOw5NKZjK7MqUjSjIka2xn_cbRhl5Q4dquAJ4lEk/edit" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Seleccionar Elementos Descendientes</td>
                     <td>Selecciona los elementos descendientes del elemento B que se encuentran dentro del elemento A.</td>
+                    <td><a href="https://docs.google.com/document/d/1SDbFOw5NKZjK7MqUjSjIka2xn_cbRhl5Q4dquAJ4lEk/edit" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Seleccionar Elementos Hijos</td>
                     <td>Selecciona los elementos B que son hijos del elemento A. Se ecribe A>B.</td>
+                    <td><a href="https://docs.google.com/document/d/1SDbFOw5NKZjK7MqUjSjIka2xn_cbRhl5Q4dquAJ4lEk/edit" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Seleccionar Elementos Hermanos</td>
                     <td>Selecciona todos los elementos B que son hermanos de los elementos seleccionados por A. Se escribe A~B.</td>
+                    <td><a href="https://docs.google.com/document/d/1SDbFOw5NKZjK7MqUjSjIka2xn_cbRhl5Q4dquAJ4lEk/edit" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Seleccionar Elementos Hermanos Adyacentes</td>
                     <td>Selecciona a los elementos B que son hermanos y están inmediatamente después de el elemento seleccionado A.</td>
+                    <td><a href="https://docs.google.com/document/d/1SDbFOw5NKZjK7MqUjSjIka2xn_cbRhl5Q4dquAJ4lEk/edit" target="_blank">Documentacion</a></td>
                 </tr>
+            </tbody>
+        </table>
+        
+        <div id="titulo">UNIDADES</div>
+        <table id="Unidades">
+            <thead>
                 <tr>
-                    <td>Especificidad</td>
-                    <td>Es la manera en la cual los navegadores deciden el valor que será aplicado a una propiedad de un elemento.</td>
-                    <td><a href="https://polypane.app/css-specificity-calculator/" target="_blank">Herramienta</a></td>
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Documentacion</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td rowspan="2"><strong>Unidades</strong></td>
                     <td>Unidades Absolutas</td>
                     <td>La unidad absoluta por excelencia el el pixel (px). Un pixel es el equivalente a 0.265 mm.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Unidades Relativas</td>
                     <td>
                         Hay varias, rem es el tamaño relativo de la letra del elemento raiz, % es relativo a otro valor ya puesto con anterioridad, vw es relativo al ancho del viewport y vh es relativo al alto del viewport.
                     </td>
+                    <td><a href="https://desarrolloweb.com/articulos/unidades-medida-css-relativas-absolutas.html" target="_blank">Documentacion</a></td>
                 </tr>
+            </tbody>
+        </table>
+
+        <div id="titulo">MODELADO DE CAJAS</div>
+        <table id="Modelado de cajas">
+            <thead>
                 <tr>
-                    <td rowspan="8"><strong>Modelado de Cajas</strong></td>
+                    
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Documentacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <td>Definicion Modelo de Cajas</td>
                     <td>Cada elemento html se considera una caja. doned CSS determina el tamaño, posición y propiedades.</td>
                     <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank">Documentacion</a></td>
@@ -179,27 +223,62 @@
                     <td>Un Enfoque Mixto (En línea y bloque)</td>
                     <td>No comienzan en una nueva linea, width y height se respetan, padding, margin y border harán que el contenido que rodea a la caja se aleje de ella.</td>
                 </tr>
+            </tbody>
+        </table>
+        <img src="imagenes/modelocajas.png" alt="Modelo de Cajas" title="Modelo de Cajas" height="150" width="300">
+
+        <div id="titulo">FLEXBOX</div>
+        <table id="flexbox">
+            <thead>
                 <tr>
-                    <td><strong>Media Query</strong></td>
-                    <td>Definición Media Query</td>
-                    <td>Consiste en una media type, y una o más expresiones que contienen características del media type.</td>
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Documentacion</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td rowspan="3"><strong>FlexBox</strong></td>
                     <td>Definición FlexBox</td>
                     <td>Es un modulo de diseño de CSS que facilita el posicionamiento de los elementos. La propiedad display: flex; nos permite establecer un contenedor flexible.</td>
                     <td><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Eje Principal</td>
-                    <td>Es un eje a lo largo en el cual se disponen los elementos flexibles, la dirección de este eje se puede cambiar con la propiedad flex-direction, con los valores row, row-reverse, column y column-reverse.</td>
+                    <td>Es un eje a lo largo en el cual se disponen los elementos flexibles, la dirección de este eje se puede cambiar con la propiedad flex-direction, con los valores row, row-reverse, column y column-reverse.</td>               
+                    <td><a href="https://f-beltran.github.io/flex-direccion-principal/" target="_blank">Documentacion</a></td>
                 </tr>
                 <tr>
                     <td>Eje Transversal</td>
                     <td>Es un eje a lo largo en el cual se disponen las lineas flexibles, la dirección de este eje se puede cambiar con la propiedad flex-wrap, con los valores nowrap, wrap, nowrap-reverse y wrap-reverse.</td>
+                    <td><a href="https://f-beltran.github.io/flex-eje-transversal/" target="_blank">Documentacion</a></td>
                 </tr>
             </tbody>
         </table>
+        <img src="imagenes/flexbox.png" alt="FlexBox" title="FlexBox" width="550" height="250">
+
+        <div id="titulo">Algunas Definiciones</div>
+        <table id="extra">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Explicacion</th>
+                    <th>Herramienta o Documentacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Media Query</td>
+                    <td>Consiste en una media type, y una o más expresiones que contienen características del media type.</td>
+                    <td><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>Especificidad</td>
+                    <td>Es la manera en la cual los navegadores deciden el valor que será aplicado a una propiedad de un elemento.</td>
+                    <td><a href="https://polypane.app/css-specificity-calculator/" target="_blank">Herramienta</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="imagenes/especidificidad.png" alt="Especificidad" title="Especificidad" width="450" height="230">
             </center>
     </div>
 </body>

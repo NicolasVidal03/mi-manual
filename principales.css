@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    }
+body{
+    background-color:beige;
+    background-blend-mode :hard-light white;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: rgb(44, 24, 8);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+    #header .referencia{
+        padding: 0 10px 0 400px;
+        
+    }
+        #header .referencia a{
+            text-decoration: none;
+            color: white;
+            padding: 0 30px;
+            font-size: 25px;
+        }
+        #header .referencia a:hover{
+            color: rgb(138, 138, 138);
+            transform: scale(2);
+        }
+    #header .nombre{
+        padding: 0 20px;
+        color: white;
+        font-size: 35px;
+
+    }
